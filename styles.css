@@ -1,0 +1,64 @@
+/* Apply font and background to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #0077b6;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style the main content */
+main {
+  background-color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Style the list */
+li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  background-color: #90e0ef;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Style headings */
+h1 {
+  font-family: 'Georgia', serif;
+  text-align: center;
+  color: #ffd166;
+}
+
+h2 {
+  color: #0077b6;
+}
+
+/* Improve paragraph readability */
+p {
+  line-height: 1.6;
+}
