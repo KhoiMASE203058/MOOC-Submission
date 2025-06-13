@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Michigan Facts</title>
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
   <header>
     <h1>Explore Michigan</h1>
     <nav>
+      <img src="logo.png" alt="Site logo" />
       <a href="https://www.michigan.org/" target="_blank" rel="noopener">Visit Michigan.org</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <section>
       <h2>Top Destinations</h2>
       <ul>
+        <!-- <li> styling will be commented out in CSS -->
         <li>Mackinac Bridge</li>
         <li>Detroit Skyline</li>
         <li>Sleeping Bear Dunes</li>
@@ -28,16 +32,24 @@
 
     <section>
       <h2>Gallery</h2>
-<img src="https://images.unsplash.com/photo-1597091501233-3c4e5a3f4f9e" alt="Mackinac Bridge spanning over the Straits of Mackinac">
-<img src="https://images.unsplash.com/photo-1597091501233-3c4e5a3f4f9e" alt="Detroit city skyline at sunset">
-<img src="https://www.nps.gov/common/uploads/structured_data/3C7D9F5F-1DD8-B71B-0B5B8E0A9E5B6F5B.jpg" alt="Sleeping Bear Dunes National Lakeshore with sand dunes and Lake Michigan in the background">
+      <div class="grid">
+        <img src="https://images.unsplash.com/photo-1597091501233-3c4e5a3f4f9e" alt="Mackinac Bridge spanning over the Straits of Mackinac" />
+        <img src="https://example.com/detroit-skyline.jpg" alt="Detroit city skyline at sunset" />
+        <img src="https://www.nps.gov/common/uploads/structured_data/3C7D9F5F-1DD8-B71B-0B5B8E0A9E5B6F5B.jpg" alt="Sleeping Bear Dunes National Lakeshore" />
+      </div>
+    </section>
 
+    <section>
+      <h2>Other Images</h2>
+      <div class="flex">
+        <img src="https://via.placeholder.com/150" alt="Example 1" />
+        <img src="https://via.placeholder.com/150" alt="Example 2" />
+      </div>
     </section>
   </main>
 
   <footer>
     <p>June, 2025</p>
   </footer>
-
 </body>
 </html>
