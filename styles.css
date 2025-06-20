@@ -1,64 +1,86 @@
-/* Apply font and background to the entire page */
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
-  font-size: 16px;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  background: #f8f9fa;
+  color: #333;
 }
 
-/* Style the header */
-header {
-  background-color: #0077b6;
-  padding: 20px;
-  text-align: center;
-  color: white;
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 1000;
+}
+.skip-link:focus {
+  top: 10px;
 }
 
+/* Header and nav styling */
+nav {
+  background-color: #004c99;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
 }
-
-/* Style the main content */
-main {
-  background-color: #ffffff;
-  font-size: 18px;
-  padding: 20px;
-}
-
-/* Style the footer */
-footer {
-  background-color: #0077b6;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Style the list */
-li {
-  display: inline-block;
-  width: 30%;
-  text-align: center;
-  padding: 10px;
-  background-color: #90e0ef;
-  margin: 5px;
+nav a:hover {
+  background-color: #0073e6;
   border-radius: 5px;
 }
 
-/* Style headings */
-h1 {
-  font-family: 'Georgia', serif;
+/* Footer */
+footer {
   text-align: center;
-  color: #ffd166;
+  background: #004c99;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
 }
 
-h2 {
-  color: #0077b6;
+/* Images */
+img {
+  max-width: 100%;
+  border: 4px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
 }
 
-/* Improve paragraph readability */
-p {
-  line-height: 1.6;
+/* Grid container */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Flex in nav already applied above, but can be reused elsewhere */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+/* Hover effect on images */
+img:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* nth-child selector example */
+.grid img:nth-child(even) {
+  border-radius: 50%;
 }
