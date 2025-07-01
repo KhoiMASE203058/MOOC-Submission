@@ -2,31 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Preview</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<a href="#main" class="skip-link">Skip to Main Content</a>
+  <h1>Image Preview Gallery</h1>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="about.html">About</a>
-  </nav>
-</header>
+  <!-- Preview area -->
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
 
-<main id="main">
-  <h1>Welcome to My Website</h1>
-  <p>This is the home page of my sample site.</p>
-  <img src="images/home.jpg" alt="Decorative plant on desk" />
-</main>
+  <!-- Thumbnail images -->
+  <div class="preview-container">
+    <img class="preview" src="images/mountain.jpg" alt="Mountain View" onmouseover="upDate(this)" onmouseout="undo()" />
+    <img class="preview" src="images/forest.jpg" alt="Forest Path" onmouseover="upDate(this)" onmouseout="undo()" />
+    <img class="preview" src="images/lake.jpg" alt="Serene Lake" onmouseover="upDate(this)" onmouseout="undo()" />
+  </div>
 
-<footer>
-  <p>&copy; 2025 My Site</p>
-</footer>
+  <script src="script.js"></script>
 
 </body>
 </html>
