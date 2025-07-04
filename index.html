@@ -2,27 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Image Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Photo Gallery</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body onload="addTabFocus()">
 
-  <h1>Image Preview Gallery</h1>
+  <h1>Interactive Photo Gallery</h1>
 
-  <!-- Preview area -->
-  <div id="image">
-    Hover over an image below to display here.
-  </div>
+  <!-- Main display area -->
+  <div id="image">Hover over an image below to display here.</div>
 
-  <!-- Thumbnail images -->
+  <!-- Thumbnails -->
   <div class="preview-container">
-    <img class="preview" src="images/mountain.jpg" alt="Mountain View" onmouseover="upDate(this)" onmouseout="undo()" />
-    <img class="preview" src="images/forest.jpg" alt="Forest Path" onmouseover="upDate(this)" onmouseout="undo()" />
-    <img class="preview" src="images/lake.jpg" alt="Serene Lake" onmouseover="upDate(this)" onmouseout="undo()" />
+    <img class="preview" src="images/forest.jpg" alt="A quiet forest" 
+      onmouseover="upDate(this)" onmouseout="undo()" 
+      onfocus="upDate(this)" onblur="undo()" />
+    <img class="preview" src="images/beach.jpg" alt="Sunny beach view" 
+      onmouseover="upDate(this)" onmouseout="undo()" 
+      onfocus="upDate(this)" onblur="undo()" />
+    <img class="preview" src="images/mountains.jpg" alt="Snowy mountains" 
+      onmouseover="upDate(this)" onmouseout="undo()" 
+      onfocus="upDate(this)" onblur="undo()" />
+    <img class="preview" src="images/desert.jpg" alt="Desert landscape" 
+      onmouseover="upDate(this)" onmouseout="undo()" 
+      onfocus="upDate(this)" onblur="undo()" />
+    <img class="preview" src="images/lake.jpg" alt="Peaceful lake" 
+      onmouseover="upDate(this)" onmouseout="undo()" 
+      onfocus="upDate(this)" onblur="undo()" />
+    <img class="preview" src="images/city.jpg" alt="City skyline at night" 
+      onmouseover="upDate(this)" onmouseout="undo()" 
+      onfocus="upDate(this)" onblur="undo()" />
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
